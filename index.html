@@ -1,0 +1,308 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Summoner's War - Lushen Amputation Magic Calculator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="card text-center bg-warning">
+    <div class="card-header"></div>
+    <div class="card-body">
+      <img src="img/Lushen_Icon.png" /><br />
+      <img src="img/Summoners_War_-_6_Star_Render_-_By_Avishay_Perets_ApK.webp" />
+      <!-- <h4 class="card-text">Lushen Amputation Magic Calculator</h4> -->
+    </div>
+    <div class="card-footer text-muted"></div>
+  </div>
+  <div class="card-group text-center">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-text">조커 스펙</h5>
+      </div>
+      <div class="card-body">
+        <span>공격력 900 + <input type="number" id="ATK" /></span>
+        <br />
+        <span>치명피해 <input type="number" id="CRI" /></span>
+      </div>
+      <div class="card-footer text-muted">
+        조커의 기본공격력은 6성 40레벨 기준입니다.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-text">명예 건물</h5>
+      </div>
+      <div class="card-body">
+        <span>
+          <img src="img/Ancient_sword.png" height="30px;" />
+          고대의 검 LEVEL -
+          <select name="" id="AS">
+            <option value="0">0</option>
+            <option value="2">1</option>
+            <option value="4">2</option>
+            <option value="6">3</option>
+            <option value="8">4</option>
+            <option value="10">5</option>
+            <option value="12">6</option>
+            <option value="14">7</option>
+            <option value="16">8</option>
+            <option value="18">9</option>
+            <option value="20">10</option>
+          </select>
+        </span>
+        <br />
+        <span>
+          <img src="img/Wind_sanctuary.png" height="30px;" />
+          바람의 성소 LEVEL -
+          <select name="" id="WS">
+            <option value="0">0</option>
+            <option value="3">1</option>
+            <option value="5">2</option>
+            <option value="7">3</option>
+            <option value="9">4</option>
+            <option value="11">5</option>
+            <option value="13">6</option>
+            <option value="15">7</option>
+            <option value="17">8</option>
+            <option value="19">9</option>
+            <option value="21">10</option>
+          </select>
+        </span>
+        <br />
+        <span>
+          <img src="img/Fallen_Ancient_Guardian.png" height="30px;" />
+          무너진 고대 가디언 LEVEL -
+          <select name="" id="FAG">
+            <option value="0">0</option>
+            <option value="2">1</option>
+            <option value="5">2</option>
+            <option value="7">3</option>
+            <option value="10">4</option>
+            <option value="12">5</option>
+            <option value="15">6</option>
+            <option value="17">7</option>
+            <option value="20">8</option>
+            <option value="22">9</option>
+            <option value="25">10</option>
+          </select>
+        </span>
+      </div>
+      <div class="card-footer text-muted">
+        모든 컨텐츠에 적용됩니다.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-text">길드 스킬</h5>
+      </div>
+      <div class="card-body">
+        <br />
+        <img src="img/crestofpunishment.jpg" height="30px;" /> 길드 LEVEL
+        <select name="" id="GB">
+          <option value="0">0 - 10</option>
+          <option value="2">11 - 25</option>
+          <option value="5">26 - 30</option>
+        </select>
+      </div>
+      <div class="card-footer text-muted">
+        1-10 0% / 11-25 2% / 26-30 5%
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-text">공격력 강화 버프</h5>
+      </div>
+      <div class="card-body">
+        <br />
+        <img src="img/Status_Increase_Attack_Power.png" height="30px;" />
+        <select name="" id="IAP">
+          <option value="1">미적용</option>
+          <option value="1.5">적용</option>
+        </select>
+      </div>
+      <div class="card-footer text-muted">
+        총 공격력의 50%가 증가합니다.
+      </div>
+    </div>
+  </div>
+
+  <div class="card-group text-center">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-text">깃발</h5>
+      </div>
+      <div class="card-body">
+        <ul>
+          <span>
+            <img src="img/Flag_of_Battle.png" height="30px;" />
+            투지의 깃발 LEVEL
+            <select name="" id="FB">
+              <option value="0">0</option>
+              <option value="2">1</option>
+              <option value="4">2</option>
+              <option value="6">3</option>
+              <option value="8">4</option>
+              <option value="10">5</option>
+              <option value="12">6</option>
+              <option value="14">7</option>
+              <option value="16">8</option>
+              <option value="18">9</option>
+              <option value="20">10</option>
+            </select>
+          </span>
+          <br />
+          <span>
+            <img src="img/Flag_of_Rage.png" height="30px;" />
+            광폭의 깃발 LEVEL
+            <select name="" id="FR">
+              <option value="0">0</option>
+              <option value="2">1</option>
+              <option value="5">2</option>
+              <option value="7">3</option>
+              <option value="9">4</option>
+              <option value="12">5</option>
+              <option value="15">6</option>
+              <option value="17">7</option>
+              <option value="20">8</option>
+              <option value="22">9</option>
+              <option value="25">10</option>
+            </select>
+          </span>
+        </ul>
+      </div>
+      <div class="card-footer text-muted">
+        길드전에만 적용됩니다.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-text">리더 스킬</h5>
+      </div>
+      <div class="card-body">
+        <ul>
+          <span>
+            <img src="img/Leader_Skill_Attack_Power_(Low)_Icon.png" height="30px;" />공격력 <input type="number"
+              id="LATK" />%
+          </span>
+          <br />
+          <span>
+            <img src="img/Leader_Skill_Critical_Damage_(Low)_Icon.png" height="30px;" />치명피해 <input type="number"
+              id="LCRIDMG" />%
+          </span>
+        </ul>
+      </div>
+      <div class="card-footer text-muted">
+        공격력 / 치명피해 를 입력해주세요.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-text">스킬 레벨</h5>
+      </div>
+      <div class="card-body">
+        <br />
+        <img src="img/Amputation_Magic.png" height="30px;" />
+        <select name="" id="SKILLLV">
+          <option value="0">1</option>
+          <option value="0.1">2</option>
+          <option value="0.2">3</option>
+          <option value="0.3">4</option>
+        </select>
+      </div>
+      <div class="card-footer text-muted">
+        기본 레벨은 1입니다.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-text">투지 룬</h5>
+      </div>
+      <div class="card-body">
+        <br />
+        <span>
+          <img src="img/Fight_Rune_Icon.png" height="30px;" />
+          <input id="FIGHTRUNE" type="number" />
+          개
+        </span>
+      </div>
+      <div class="card-footer text-muted">
+        하나 당 기본공격력의 8%가 증가합니다.
+      </div>
+    </div>
+  </div>
+
+  <div class="">
+    <button type=" button" class="btn btn-warning btn-lg btn-block" value="계산하기" onclick="cal()">
+      계산하기
+    </button>
+  </div>
+
+  <div class="card-group text-center">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-text">카이로스 던전 데미지</h5>
+      </div>
+      <div class="card-body">
+        <span>치명타 발생시 = </span><span id="CairosDMG">00</span><br />
+        <span>치명타 미발생시 = </span><span id="NCairosDMG">00</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-text">길드전 데미지</h5>
+      </div>
+      <div class="card-body">
+        <span>치명타 발생시 = </span><span id="GuildBattleDMG">00</span><br />
+        <span>치명타 미발생시 = </span><span id="NGuildBattleDMG">00</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-text">아레나 데미지</h5>
+      </div>
+      <div class="card-body">
+        <span>치명타 발생시 = </span><span id="ArenaDMG">00</span><br />
+        <span>치명타 미발생시 = </span> <span id="NArenaDMG">00</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-right">
+    Kor / XSong / 남산정 / ver - 0.01
+  </div>
+  </div>
+  <!-- 추가예정
+  <footer>
+    <div class="bg-info clearfix">
+      <button type="button" class="btn btn-secondary float-left">로 이동하기</button>
+      <button type="button" class="btn btn-secondary float-right">로 이동하기</button>
+    </div>
+  </footer> -->
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+<style>
+  li {
+    list-style-type: none;
+  }
+
+  ul li {
+    list-style-type: none;
+  }
+</style>
+
+</html>
