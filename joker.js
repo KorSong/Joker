@@ -58,6 +58,8 @@ function cal() {
         alert("입력칸 내에는 숫자만 입력해주세요.");
     }
 
+
+
     if (ATK.value == "") {
         ATK.value = "0";
     }
@@ -73,8 +75,6 @@ function cal() {
     if (FIGHTRUNE.value == "") {
         FIGHTRUNE.value = "0"
     }
-
-
 
 
     // if (
@@ -231,5 +231,12 @@ function cal() {
         (1 + eval(SKILLLV.value)) *
         0.877;
     NArenaDMG.innerHTML = Math.ceil(NARENA);
+
+    //------------------------------------------------------------------------------------------------------------------------------------//
+    allCairosDMG.innerHTML = Math.ceil(Cairos) * 3;
+    allNCairosDMG.innerHTML = Math.ceil(NCairos) * 3;
+    allGuildBattleDMG.innerHTML = Math.ceil(GuildBattle) * 3;
+    allNGuildBattleDMG.innerHTML = Math.ceil(NGuildBattle) * 3;
+    allArenaDMG.innerHTML = Math.ceil(ARENA) * 3;
+    allNArenaDMG.innerHTML = Math.ceil(NARENA) * 3;
 }
-//------------------------------------------------------------------------------------------------------------------------------------//
