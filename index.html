@@ -26,14 +26,19 @@
       </div>
       <div class="card-body">
         <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputEmail4">
+          <div class="form-group col-md-4">
+            <label>
               공격력 900 +</label>
             <input class="form-control form-control-sm" type="number" id="ATK" />
           </div>
-          <div class="form-group col-md-6">
-            <label for="inputPassword4">
-              치명피해 </label>
+          <div class="form-group col-md-4">
+            <label>
+              치명확률 (%) </label>
+            <input class="form-control form-control-sm" type="number" id="CRIRATE" value="100" max="100" />
+          </div>
+          <div class=" form-group col-md-4">
+            <label>
+              치명피해 (%) </label>
             <input class="form-control form-control-sm" type="number" id="CRI" />
           </div>
         </div>
@@ -52,7 +57,7 @@
 
         <div class="form-row">
           <div class="form-group col-md-4">
-            <label for="inputEmail4">
+            <label>
               <img src="img/Ancient_sword.png" height="30px;" /><br>
               고대의 검</label>
             <select class="form-control" name="" id="AS">
@@ -71,7 +76,7 @@
           </div>
 
           <div class="form-group col-md-4">
-            <label for="inputPassword4"> <img src="img/Wind_sanctuary.png" height="30px;" /><br>
+            <label> <img src="img/Wind_sanctuary.png" height="30px;" /><br>
               바람의 성소</label>
             <select class="form-control" name="" id="WS">
               <option value="0">0</option>
@@ -89,7 +94,7 @@
           </div>
 
           <div class="form-group col-md-4">
-            <label for="inputPassword4">
+            <label>
               <img src="img/Fallen_Ancient_Guardian.png" height="30px;" /><br>
               무너진 가디언 </label>
             <select class="form-control" name="" id="FAG">
@@ -119,7 +124,7 @@
       </div>
       <div class="card-body  ">
         <div class="form-group">
-          <label for="inputEmail4"> <img src="img/crestofpunishment.jpg" height="30px;" /> 길드 LEVEL</label>
+          <label> <img src="img/crestofpunishment.jpg" height="30px;" /> 길드 LEVEL</label>
           <select class="form-control" name="" id="GB">
             <option value="0">0 - 10</option>
             <option value="2">11 - 25</option>
@@ -128,7 +133,7 @@
         </div>
       </div>
       <div class="card-footer text-muted">
-        1-10 0% / 11-25 2% / 26-30 5%
+        카이로스 던전에만 적용됩니다.
       </div>
     </div>
 
@@ -139,7 +144,7 @@
       <div class="card-body">
 
         <div class="form-group">
-          <label for="inputEmail4"> <img src="img/Status_Increase_Attack_Power.png" height="30px;" /> 공격력 강화버프
+          <label> <img src="img/Status_Increase_Attack_Power.png" height="30px;" /> 공격력 강화버프
             유무</label>
           <select class="form-control" name="" id="IAP">
             <option value="1">미적용</option>
@@ -161,7 +166,7 @@
       <div class="card-body">
         <div class="form-row">
           <div class="form-group col-md-6">
-            <label for="inputEmail4"> <img src="img/Flag_of_Battle.png" height="30px;" />
+            <label> <img src="img/Flag_of_Battle.png" height="30px;" />
               투지의 깃발 LEVEL</label>
             <select class="form-control" name="" id="FB">
               <option value="0">0</option>
@@ -178,7 +183,7 @@
             </select class="form-control">
           </div>
           <div class="form-group col-md-6">
-            <label for="inputPassword4"> <img src="img/Flag_of_Rage.png" height="30px;" />
+            <label> <img src="img/Flag_of_Rage.png" height="30px;" />
               광폭의 깃발 LEVEL</label>
             <select class="form-control" name="" id="FR">
               <option value="0">0</option>
@@ -208,12 +213,12 @@
       <div class="card-body">
         <div class="form-row">
           <div class="form-group col-md-6">
-            <label for="inputEmail4"> <img src="img/Leader_Skill_Attack_Power_(Low)_Icon.png" height="30px;" />
+            <label> <img src="img/Leader_Skill_Attack_Power_(Low)_Icon.png" height="30px;" />
               공격력%</label>
             <input class="form-control form-control-sm" type="number" id="LATK" />
           </div>
           <div class="form-group col-md-6">
-            <label for="inputPassword4"> <img src="img/Leader_Skill_Critical_Damage_(Low)_Icon.png" height="30px;" />
+            <label> <img src="img/Leader_Skill_Critical_Damage_(Low)_Icon.png" height="30px;" />
               치명피해%</label>
             <input class="form-control form-control-sm" type="number" id="LCRIDMG" />
           </div>
@@ -230,7 +235,7 @@
       </div>
       <div class="card-body">
         <div class="form-group">
-          <label for="inputEmail4"> <img src="img/Amputation_Magic.png" height="30px;" /> 절단마술 LEVEL</label>
+          <label> <img src="img/Amputation_Magic.png" height="30px;" /> 절단마술 LEVEL</label>
           <select class="form-control" name="" id="SKILLLV">
             <option value="0">1</option>
             <option value="0.1">2</option>
@@ -250,7 +255,7 @@
       </div>
       <div class="card-body">
         <div class="form-group">
-          <label for="inputEmail4"> <img src="img/Fight_Rune_Icon.png" height="30px;" />투지룬 갯수</label>
+          <label> <img src="img/Fight_Rune_Icon.png" height="30px;" />투지룬 갯수</label>
           <input class="form-control form-control-sm" id="FIGHTRUNE" type="number" />
         </div>
       </div>
@@ -267,27 +272,91 @@
   </div>
 
   <div class="card-group text-center">
+
     <div class="card">
       <div class="card-header">
         <h5 class="card-text">카이로스 던전 데미지</h5>
       </div>
-      <div class="card-body">
-        <span>치명타 발생시 = </span><span id="CairosDMG">00</span><br />
-        <span>총 </span><span id="allCairosDMG">00</span><br /><br />
-        <span>치명타 미발생시 = </span><span id="NCairosDMG">00</span><br />
-        <span>총 </span><span id="allNCairosDMG">00</span>
+      <div class="card-group">
+        <div class="card">
+          <div class="card-header">
+            치명타 발생시
+          </div>
+          <div class="card-body">
+            <span>평균 데미지<br></span><span id="YCairosDMG">00</span><br><br>
+            <span>1타 데미지<br></span><span id="MINYCairosDMG">00</span> ~ <span id="MAXYCairosDMG">00</span> <br><br>
+            <span>총 데미지<br></span><span id="MINallYCairosDMG">00</span> ~ <span id="MAXallYCairosDMG">00</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            평균값(기댓값)
+          </div>
+          <div class="card-body">
+            <span>평균 데미지<br></span><span id="CairosDMG">00</span><br><br>
+            <span>1타 데미지<br></span><span id="MINCairosDMG">00</span> ~ <span id="MAXCairosDMG">00</span> <br><br>
+            <span>총 데미지<br></span><span id="MINallCairosDMG">00</span> ~ <span id="MAXallCairosDMG">00</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            치명타 미발생시
+          </div>
+          <div class="card-body">
+            <span>평균 데미지<br></span><span id="NCairosDMG">00</span><br><br>
+            <span>1타 데미지<br></span><span id="MINNCairosDMG">00</span> ~ <span id="MAXNCairosDMG">00</span> <br><br>
+            <span>총 데미지<br></span><span id="MINallNCairosDMG">00</span> ~ <span id="MAXallNCairosDMG">00</span>
+          </div>
+        </div>
       </div>
     </div>
+
+
 
     <div class="card">
       <div class="card-header">
         <h5 class="card-text">길드전 데미지</h5>
       </div>
-      <div class="card-body">
-        <span>치명타 발생시 = </span><span id="GuildBattleDMG">00</span><br />
-        <span>총 </span><span id="allGuildBattleDMG">00</span><br /><br />
-        <span>치명타 미발생시 = </span><span id="NGuildBattleDMG">00</span><br />
-        <span>총 </span><span id="allNGuildBattleDMG">00</span>
+      <div class="card-group">
+        <div class="card">
+          <div class="card-header">
+            치명타 발생시
+          </div>
+          <div class="card-body">
+            <span>평균 데미지<br></span><span id="YGuildBattleDMG">00</span><br><br>
+            <span>1타 데미지<br></span><span id="MINYGuildBattleDMG">00</span> ~ <span id="MAXYGuildBattleDMG">00</span>
+            <br><br>
+            <span>총 데미지<br></span><span id="MINallYGuildBattleDMG">00</span> ~ <span
+              id="MAXallYGuildBattleDMG">00</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            평균값(기댓값)
+          </div>
+          <div class="card-body">
+            <span>평균 데미지<br></span><span id="GuildBattleDMG">00</span><br><br>
+            <span>1타 데미지<br></span><span id="MINGuildBattleDMG">00</span> ~ <span id="MAXGuildBattleDMG">00</span>
+            <br><br>
+            <span>총 데미지<br></span><span id="MINallGuildBattleDMG">00</span> ~ <span id="MAXallGuildBattleDMG">00</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            치명타 미발생시
+          </div>
+          <div class="card-body">
+            <span>평균 데미지<br></span><span id="NGuildBattleDMG">00</span><br><br>
+            <span>1타 데미지<br></span><span id="MINNGuildBattleDMG">00</span> ~ <span id="MAXNGuildBattleDMG">00</span>
+            <br><br>
+            <span>총 데미지<br></span><span id="MINallNGuildBattleDMG">00</span> ~ <span
+              id="MAXallNGuildBattleDMG">00</span>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -295,17 +364,63 @@
       <div class="card-header">
         <h5 class="card-text">아레나 데미지</h5>
       </div>
-      <div class="card-body">
-        <span>치명타 발생시 1타 당 </span><span id="ArenaDMG">00</span><br />
-        <span>총 </span><span id="allArenaDMG">00</span><br /><br />
-        <span>치명타 미발생시 = </span> <span id="NArenaDMG">00</span><br />
-        <span>총 </span> <span id="allNArenaDMG">00</span>
+      <div class="card-group">
+        <div class="card">
+          <div class="card-header">
+            치명타 발생시
+          </div>
+          <div class="card-body">
+            <span>평균 데미지<br></span><span id="YArenaDMG">00</span><br><br>
+            <span>1타 데미지<br></span><span id="MINYArenaDMG">00</span> ~ <span id="MAXYArenaDMG">00</span>
+            <br><br>
+            <span>총 데미지<br></span><span id="MINallYArenaDMG">00</span> ~ <span id="MAXallYArenaDMG">00</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            평균값(기댓값)
+          </div>
+          <div class="card-body">
+            <span>평균 데미지<br></span><span id="ArenaDMG">00</span><br><br>
+            <span>1타 데미지<br></span><span id="MINArenaDMG">00</span> ~ <span id="MAXArenaDMG">00</span>
+            <br><br>
+            <span>총 데미지<br></span><span id="MINallArenaDMG">00</span> ~ <span id="MAXallArenaDMG">00</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            치명타 미발생시
+          </div>
+          <div class="card-body">
+            <span>평균 데미지<br></span><span id="NArenaDMG">00</span><br><br>
+            <span>1타 데미지<br></span><span id="MINNArenaDMG">00</span> ~ <span id="MAXNArenaDMG">00</span>
+            <br><br>
+            <span>총 데미지<br></span><span id="MINallNArenaDMG">00</span> ~ <span id="MAXallNArenaDMG">00</span>
+          </div>
+        </div>
       </div>
     </div>
+
+    <!-- <div class="card">
+      <div class="card-header">
+        <h5 class="card-text">아레나 데미지</h5>
+      </div>
+      <div class="card-body">
+        <span>치명타 1타 당 평균 = </span><span id="ArenaDMG">00</span><br>
+        <span>치명타 1타 당 = </span><span id="MINArenaDMG">00</span> ~ <span id="MAXArenaDMG">00</span> <br />
+        <span>총 </span><span id="MINallArenaDMG">00</span> ~ <span id="MAXallArenaDMG">00</span><br /><br />
+        <span>치명타 1타 당 평균 = </span><span id="NArenaDMG">00</span><br>
+        <span>비치명타 1타 당 = </span><span id="MINNArenaDMG">00</span> ~ </span><span id="MAXNArenaDMG">00</span><br />
+        <span>총 </span><span id="MINallNArenaDMG">00</span> ~ <span id="MAXallNArenaDMG">00</span>
+      </div>
+    </div> -->
+
   </div>
 
   <div class="p-3 mb-2 bg-light text-dark text-right">
-    Kor / XSong / 절단마술 계산기 / ver - 0.03
+    제작자 XSong (ver 0.04) <br>정확한 수치 측정에 도움을 주신 'Jaehee444'님께 감사드립니다.
   </div>
   </div>
 
